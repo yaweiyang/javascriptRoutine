@@ -170,27 +170,7 @@ function insertSort(arr) {
     return arr;
 }
 
-// console.log(qucikSort(createArr(20)));
-// console.log(bubbleSort(createArr(10)));
-// console.log(selectionSort(createArr(10)));
-// console.log(insertSort(createArr(10)));
-
-function alarm() {
-
-    /*for (let i = 0; i < 5; i++) {
-        setTimeout(function() {
-            console.log(i);
-        }, 1000*i);
-    }*/
-
-    for (var i = 0; i < 5; i++) {
-        (function (j) {
-            setTimeout(function () {
-                console.log(j);
-            }, 1000 *j);
-        })(i);
-    }
-}
-
-
-alarm();
+console.log(qucikSort(createArr(10)));
+console.log(bubbleSort(createArr(10)));
+console.log(selectionSort(createArr(10)));
+console.log(insertSort(createArr(10)));
