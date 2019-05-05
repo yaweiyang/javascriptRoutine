@@ -7,7 +7,13 @@ let arr3 = [7, 8, 9];
 let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let arr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 let arr6 = [1, 2, 3, 2, 1, 3];
-let arr7 = [{ name:'yangyawei', score:100}, { name:'yangmeili', score:105}, { name:'xiaohong', score:23}, { name:'xiaoming', score:60}, { name:'xiaobai', score:80}];
+let arr7 = [
+    { name:'yangyawei', score:100},
+    { name:'yangmeili', score:105},
+    { name:'xiaohong', score:23},
+    { name:'xiaoming', score:60},
+    { name:'xiaobai', score:80}
+    ];
 
 let isEven = function (x) {
     return (x % 2 === 0);
