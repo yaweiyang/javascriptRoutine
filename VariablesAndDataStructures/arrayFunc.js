@@ -67,6 +67,10 @@ let isEven1 = function (x) {
 // let arr = arr4.splice(1,2, 'a');// 第三个参数不存在时删除元素不添加元素
 // console.log(arr4);
 
+// 对数组进行迭代并把每一次执行的结果组成数组返回
+// let arr = arr1.map(isEven);
+
+
 
 console.log(arr);
 
