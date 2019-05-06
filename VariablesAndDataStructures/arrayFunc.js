@@ -70,8 +70,24 @@ let isEven1 = function (x) {
 // 对数组进行迭代并把每一次执行的结果组成数组返回
 // let arr = arr1.map(isEven);
 
+// 类似map 对数组进行迭代 不存在返回值
+// arr1.forEach(isEven);
+// arr1.forEach(isEven1);
+
+// 对数组进行迭代 并返回又符合条件的元素组成数组
+// let arr = arr1.filter(isEven);
+
+// 对数组进行迭代 数组中存在符合条件的元素 返回true 不存在 返回false
+// let boo = arr1.some(isEven);
+// let boo = arr1.some((x)=>{return false;});
+// console.log(boo);
+
+// 对数组进行迭代 要求数组中的每一个元素都符合要求 返回true 否则false
+// let boo = arr1.every(isEven);
+// console.log(boo);
 
 
-console.log(arr);
+
+// console.log(arr);
 
 
