@@ -86,6 +86,27 @@ let isEven1 = function (x) {
 // let boo = arr1.every(isEven);
 // console.log(boo);
 
+// 对数组进行迭代 素组元素两两进行操作 传递给下次计算作为第一个元素 直至最后一个元素 并返回计算结果
+// let value = arr1.reduce(function (a, b) {
+//     // console.log(a * b);
+//     return a * b;
+// });
+// console.log(value);
+
+// 对数组进行迭代 逆序对数组元素两两进行操作 与reduce同理
+// let value = arr1.reduceRight(function (a, b) {
+//     return a + ' and ' + b;
+// });
+// console.log(value);
+
+// 数组迭代 查找数组中是否存在某元素 并返回位置
+// let index = arr1.indexOf(3, 0);
+// console.log('数组中存在元素3并且位置为：'+index);
+
+// 数组迭代 查找数组中是否存在某元素并返回该元素最后出现的位置
+// let index = arr1.lastIndexOf(3, arr1.length-1);
+// console.log('数组中最后出现元素3的位置为：' + index);
+
 
 
 // console.log(arr);
