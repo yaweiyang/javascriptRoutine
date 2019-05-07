@@ -53,4 +53,4 @@ class Stack {
 let stack = new Stack();
 console.log(stack.isEmpty());
 
-export {stack}
+export {Stack}
