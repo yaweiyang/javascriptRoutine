@@ -50,7 +50,11 @@ class Stack {
         console.log(this.items.toString());
     }
 }
+
 let stack = new Stack();
 console.log(stack.isEmpty());
 
-export {Stack}
+// 模块化导出方式
+module.exports = {
+    Stack: Stack
+};

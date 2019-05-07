@@ -1,6 +1,8 @@
 /**
  * 每一秒输出一个从 0~4 的数字
  */
+
+
 function alarm() {
     // 原本的for循环
     /*for (var i = 0; i < 5; i++) {
