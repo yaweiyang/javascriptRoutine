@@ -26,7 +26,7 @@ function alarm() {
     }
 }
 
-alarm();
+// alarm();
 
 /**
  * 查找数组中相同的元素并删除至一个
@@ -51,4 +51,13 @@ function deleteSameElementInArray(arr) {
     return arr;
 }
 
-console.log(deleteSameElementInArray([1,3,5,7,9,11,20,3,6,8,9,13,12,3,5,20,78,56,12,23]));
+// console.log(deleteSameElementInArray([1,3,5,7,9,11,20,3,6,8,9,13,12,3,5,20,78,56,12,23]));
+
+// 递归实现 n + (n - 1) + (n - 2) + ... + 1 
+
+function digui(num) {
+    if (num == 1) return 1;
+    return digui(num - 1) + num;
+}
+
+console.log(digui(3));
