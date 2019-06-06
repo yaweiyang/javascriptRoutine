@@ -60,4 +60,25 @@ function digui(num) {
     return digui(num - 1) + num;
 }
 
-console.log(digui(3));
+// console.log(digui(3));
+
+// 要求实现打印123456  隔3秒打印
+function diguiTest (count) {
+    var func = function (callback) {
+        setTimeout(() => {
+            console.log(count);
+            if (callback != null) {
+                callback();
+            }
+        }, 3000);
+    };
+
+    if (count == 6) {
+        func();
+    } else {
+        func(()=>{
+            diguiTest(count + 1);
+        });
+    }
+}
+diguiTest(1);
