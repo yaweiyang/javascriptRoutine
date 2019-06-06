@@ -1,5 +1,5 @@
 // 导入模块
-var module = require('./stackFunc');
+var module = require('./ES6stackFunc');
 let Stack = module.Stack;
 
 /**
