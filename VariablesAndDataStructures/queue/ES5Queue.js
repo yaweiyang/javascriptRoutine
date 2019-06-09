@@ -35,17 +35,17 @@ function MyQueue () {
     };
 }
 
-let que = new MyQueue();
+/*let que = new MyQueue();
 console.log(que.isEmpty());
 que.enqueue('yangyawei');
 console.log(que.front());
 que.enqueue('yangmeili');
 que.print();
 console.log(que.dequeue());
-que.print();
+que.print();*/
 
 /**
- * 优先队列
+ * 优先队列  最小优先
  * @constructor
  */
 function MyPriorityQueue() {
@@ -63,7 +63,7 @@ function MyPriorityQueue() {
         if (this.isEmpty()) {
             items.push(queueElement);
         } else {
-            var added = false;
+            let added = false;
             for (let i = 0; i < items.length; ++i) {
                 if (queueElement.priority > items[i].priority) {
                     items.splice(i, 1, queueElement);
@@ -87,7 +87,7 @@ function MyPriorityQueue() {
 
     this.isEmpty = function () {
         return 0 == items.length;
-    }
+    };
 
     this.clear = function () {
         items = [];
@@ -101,3 +101,28 @@ function MyPriorityQueue() {
         console.log(items.toString());
     };
 }
+
+function hotPotato (nameList, num) {
+    if (null == nameList || 0 == nameList.length)
+        return;
+    let members = new MyQueue();
+
+    for (let i = 0; i < nameList.length; ++i) {
+        members.enqueue(nameList[i]);
+    }
+
+    let eliminated = '';
+
+    while (members.size() > 1) {
+        for (let i = 0; i < num; ++i) {
+            members.enqueue(members.dequeue());
+        }
+        eliminated = members.dequeue();
+        console.log(eliminated+' 被淘汰');
+    }
+    return members.dequeue();
+}
+
+let names = ['yangyawei','zhangzheng','liuzhu','xiachunguang','yuhuijie','yankuiliang','konglingkang','maxudong'];
+let winner = hotPotato(names, 3);
+console.log('最后的胜利者是：' + winner);
